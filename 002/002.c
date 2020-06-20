@@ -21,9 +21,12 @@ int main() {
         m = acos(1 - y) * 10; /* m: cos(x)曲线上y点对应的屏幕列坐标*/
         n = 45 * (y - 1) + 31;    /* n: 直线上y点对应的列坐标*/
         for (x = 0; x <= 62; x++) /* x: 屏幕列方向坐标*/
-            if (x == m && x == n) printf("+"); /*直线与cos(x)相交时打印“+”*/
-            else if (x == n) printf("+"); /*打印不相交时的直线图形*/
-            else if (x == m || x == 62 - m) printf("*"); /*打印不相交时的cos(x)图形*/
+            if (x == m && x == n)
+                printf("+"); /*直线与cos(x)相交时打印“+”*/
+            else if (x == n)
+                printf("+"); /*打印不相交时的直线图形*/
+            else if (x == m || x == 62 - m)
+                printf("*"); /*打印不相交时的cos(x)图形*/
             else printf(" "); /*其它情况打印空格*/
         printf("\n");
     }
