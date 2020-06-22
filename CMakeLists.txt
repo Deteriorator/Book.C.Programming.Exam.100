@@ -5,8 +5,8 @@ set(CMAKE_CXX_STANDARD 14)
 
 include_directories(.)
 
-add_executable(006
+add_executable(007
         .gitignore
         LICENSE
-        README.md  006/006.c)
+        README.md  007/007.c)
 
